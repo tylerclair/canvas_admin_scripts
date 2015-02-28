@@ -1,0 +1,4 @@
+[instance]
+domain = CANVAS INSTANCE HERE (https://abc.instructure.com)
+[auth]
+token = TOKEN GOES HERE
