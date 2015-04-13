@@ -14,4 +14,4 @@ payload = {'enrollment[user_id]': 'sis_login_id:' + user_id,
 for course in courses:
     uri = domain + "/api/v1/courses/%d/enrollments" % course
     r = requests.post(uri, headers=headers, data=payload)
-    print({0}, {1}, {2}.format(r.status_code,course,uri))
+    print("{0}, {1}, {2}".format(r.status_code,course,uri))
