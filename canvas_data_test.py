@@ -1,5 +1,4 @@
 from configparser import ConfigParser
-import sys
 import requests
 import hashlib
 import hmac
@@ -13,7 +12,7 @@ cd_key = config.get('auth', 'canvas_data_key')
 cd_secret = config.get('auth', 'canvas_data_secret')
 method = 'GET'
 cd_host = config.get('instance', 'data')
-hostname = 'portal.inshosteddata.com'
+hostname = 'api.inshosteddata.com'
 path = '/api/schema/latest'
 currentTime = datetime.datetime.utcnow()
 timestamp = currentTime.strftime('%a, %d %b %Y %H:%M:%S GMT')
